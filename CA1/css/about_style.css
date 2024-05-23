@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+section.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 140px 10% 0px;
+}
+
+/* style for image used */
+.quote img {
+  width: 25%;
+  border-radius: 30px;
+  opacity: 0.8;
+  margin: auto 60px;
+  margin-left: 0px;
+  outline: grey solid 1px;
+}
+
+.quote p {
+  width: 60%;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+section.about {
+  padding: 50px 10% 80px;
+}
+
+.interest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px auto;
+}
+
+.interest p {
+  text-align: justify;
+}
+
+/* style rule for imaged used in interest section */
+.interest-img {
+  width: 400px;
+  margin-left: 60px;
+  border-radius: 30px;
+  opacity: 0.7;
+  outline: grey solid 1px;
+}
+
+p#text-to-reveal {
+  padding-bottom: 40px;
+}
+
+.hobbies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 90px 0 90px 0;
+}
+
+.hobbies p {
+  text-align: justify;
+}
+
+/* style for image used for hobbies section */
+.hobbies-img {
+  margin-right: 60px;
+  width: 400px;
+  border-radius: 30px;
+  opacity: 0.8;
+  outline: grey solid 1px;
+}
+
+.persona {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 90px auto;
+}
+
+.persona p {
+  text-align: justify;
+}
+
+/* style for image used in persona section */
+.persona img {
+  width: 180px;
+  margin-left: 60px;
+  opacity: 0.75;
+}
