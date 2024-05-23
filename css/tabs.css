@@ -1,0 +1,71 @@
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  /* content down below, not side by side */
+  font-family: "Montserrat";
+  margin-top: 70px;
+  width: 100%;
+  padding-bottom: 50px;
+  height: 600px;
+}
+
+.tab-layout {
+  padding: 0 10%;
+}
+
+.tabs__label {
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.tabs__radio {
+  display: none;
+}
+
+.tabs__content {
+  order: 1; /* tab side by side */
+  width: 100%;
+  line-height: 1.5;
+  font-size: 25px;
+  display: none; /*text won't be revealed until clicked*/
+}
+
+.tabs_column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  border-radius: 20%;
+}
+
+.tabs_column p {
+  text-align: justify;
+}
+
+.tab-one {
+  width: 40%;
+  margin-right: 100px;
+  outline: grey solid 1px;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+.tab-two {
+  width: 50%;
+  text-align: left;
+}
+
+.tabs__radio:checked + .tabs__label {
+  /* positive sign shows the directory */
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(26, 77, 46);
+  border-bottom: 4px solid rgb(26, 77, 46);
+  transition: ease 0.5s;
+}
+
+.tabs__radio:checked + .tabs__label + .tabs__content {
+  /* hidden text shown */
+  display: initial;
+}

@@ -1,0 +1,87 @@
+/* layout for vision and challenges sections */
+.aspir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  border-radius: 20%;
+  margin-bottom: 75px;
+}
+
+.first-col {
+  padding: 40px 10% 0px;
+}
+
+.first-col p {
+  text-align: justify;
+}
+
+/* style for image in vision section */
+.first-col-one {
+  width: 40%;
+  outline: grey solid 1px;
+  opacity: 0.75;
+  border-radius: 10px;
+  margin-right: 105px;
+}
+
+/* layout for content in vision section */
+.first-col-two {
+  width: 50%;
+  text-align: left;
+}
+
+.sec-col {
+  padding: 0px 10% 0px;
+}
+
+.sec-col p {
+  text-align: justify;
+}
+
+/* layout for content in challenges section */
+.sec-col-one {
+  width: 50%;
+  text-align: left;
+  margin-right: 105px;
+}
+
+/* style for image used in challenges section */
+.sec-col-two {
+  width: 40%;
+  outline: grey solid 1px;
+  opacity: 0.75;
+  border-radius: 10px;
+  margin: auto 0px;
+}
+
+h3 {
+  position: relative;
+}
+
+/* adding icon in heading of vision section using pseudo-element */
+h3#vision::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  /* <a href= "http://www.freepik.com/" /a> */
+  background-image: url(../images/vision.jpg);
+  background-size: cover;
+  transform: translateY(15px);
+  margin-left: 10px;
+}
+
+/* adding icon in heading of challenges section using pseudo-element */
+h3#challenges::after {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  /* <a href="https://www.nicepng.com/ourpic/u2q8i1a9w7r5q8a9_explore-these-ideas-and-more-green-challenge-icon/" target="_blank">Explore These Ideas And More - Green Challenge Icon @nicepng.com</a> */
+  background-image: url(../images/chaicon.jpg);
+  background-size: cover;
+  transform: translateY(15px);
+  margin-left: 10px;
+  filter: grayscale(0.35);
+}
